@@ -87,8 +87,8 @@ def make_user_adjustment(user_no, save_dir):
 
     ##################### Make pdf file
     pdf = FPDF(orientation='L', unit='mm', format='A4')
-    pdf.add_font('NanumGothic', '', './fonts/NanumGothic-Regular.ttf')
-    pdf.add_font('NanumGothicBold', '', './fonts/NanumGothic-Bold.ttf')
+    pdf.add_font('NanumGothic', '', './fonts/NanumGothic-Regular.ttf', uni=True)
+    pdf.add_font('NanumGothicBold', '', './fonts/NanumGothic-Bold.ttf', uni=True)
     pdf.add_page()
 
     ###### 운송비 정산내역
